@@ -4,12 +4,11 @@ n = len(l)
 sum = int(input("Enter the sum"))
 result = []
 for i in range(n):
-    for j in range(i+1,n-i):
-        print(i,j)
+    for j in range(i+1,n):
         if l[i]+l[j] == sum:
             result.append(i)
             result.append(j)
-            break
+            
     
 print(result)        
         
